@@ -255,6 +255,78 @@ function CareEnginePage() {
         </div>
       </section>
 
+
+      {/* ── CASE STUDY ── */}
+      <section style={{ background: '#fff', borderTop: '1px solid #E8E0D5' }}>
+        <div className="container">
+          <div style={{ textAlign: 'center', marginBottom: 48 }}>
+            <div className="label" style={{ marginBottom: 12 }}>CASE STUDY</div>
+            <h2 className="h2">From chaos to clarity in 30 days</h2>
+            <p className="body" style={{ marginTop: 12, maxWidth: 480, margin: '12px auto 0' }}>
+              A real aesthetics business in Greenville, SC. Before and after Orbita Care.
+            </p>
+          </div>
+          <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: 32, marginBottom: 48 }}>
+            {/* Before */}
+            <div style={{ background: '#FDF5F5', border: '2px solid #F0C8C8', borderRadius: 14, padding: 28 }}>
+              <div style={{ fontSize: 11, fontWeight: 700, color: '#C0504A', letterSpacing: '0.1em', marginBottom: 16, fontFamily: 'var(--font-body)' }}>BEFORE ORBITA</div>
+              {[
+                ['Scheduling', 'Paper + WhatsApp + 3 apps'],
+                ['Client follow-up', 'Zero system — manual or forgotten'],
+                ['Inactive clients', 'Unknown — no tracking'],
+                ['Revenue visibility', 'End-of-month surprise'],
+                ['Consent forms', 'Paper, often missing'],
+                ['Lead tracking', 'No system — leads lost'],
+                ['Time on admin', '3-4 hours per day'],
+              ].map(([label, val]) => (
+                <div key={label} style={{ display: 'flex', justifyContent: 'space-between', padding: '8px 0', borderBottom: '1px solid #F0D8D8', fontSize: 13, fontFamily: 'var(--font-body)' }}>
+                  <span style={{ color: '#6B6560', fontWeight: 500 }}>{label}</span>
+                  <span style={{ color: '#C0504A', fontWeight: 600, textAlign: 'right', maxWidth: '55%' }}>{val}</span>
+                </div>
+              ))}
+            </div>
+            {/* After */}
+            <div style={{ background: '#F0FBF5', border: '2px solid #A8D8C8', borderRadius: 14, padding: 28 }}>
+              <div style={{ fontSize: 11, fontWeight: 700, color: '#2A7A5A', letterSpacing: '0.1em', marginBottom: 16, fontFamily: 'var(--font-body)' }}>AFTER ORBITA — 30 DAYS</div>
+              {[
+                ['Scheduling', 'One calendar, all providers, 0 conflicts'],
+                ['Client follow-up', 'Automated — 24h, 72h, 30d, birthday'],
+                ['Inactive clients', '47 identified, $14,200 revenue potential'],
+                ['Revenue visibility', 'Live P&L, health score updated daily'],
+                ['Consent forms', 'Digital, signed before every clinical visit'],
+                ['Lead tracking', 'Pipeline with source, urgency, conversion rate'],
+                ['Time on admin', 'Under 45 minutes per day'],
+              ].map(([label, val]) => (
+                <div key={label} style={{ display: 'flex', justifyContent: 'space-between', padding: '8px 0', borderBottom: '1px solid #C8E8D8', fontSize: 13, fontFamily: 'var(--font-body)' }}>
+                  <span style={{ color: '#6B6560', fontWeight: 500 }}>{label}</span>
+                  <span style={{ color: '#2A7A5A', fontWeight: 600, textAlign: 'right', maxWidth: '55%' }}>{val}</span>
+                </div>
+              ))}
+            </div>
+          </div>
+          {/* Results strip */}
+          <div style={{ display: 'grid', gridTemplateColumns: 'repeat(4, 1fr)', gap: 16, marginBottom: 32 }}>
+            {[
+              { metric: '+34%', label: 'Revenue month over month' },
+              { metric: '18',   label: 'Inactive clients reactivated in 30 days' },
+              { metric: '91%',  label: 'Rebooking rate after Orbita' },
+              { metric: '< 2h', label: 'Daily admin time reduction' },
+            ].map(item => (
+              <div key={item.metric} style={{ background: '#F7F4F0', borderRadius: 12, padding: '20px 16px', textAlign: 'center', border: '1px solid #E8E0D5' }}>
+                <div style={{ fontFamily: 'Georgia, serif', fontSize: 36, fontWeight: 400, color: engine.color_dark, marginBottom: 6 }}>{item.metric}</div>
+                <div style={{ fontSize: 12, color: '#6B6560', fontFamily: 'var(--font-body)', lineHeight: 1.4 }}>{item.label}</div>
+              </div>
+            ))}
+          </div>
+          <div style={{ background: engine.color_light, border: `1px solid ${engine.color}33`, borderRadius: 12, padding: '20px 24px', textAlign: 'center' }}>
+            <p style={{ fontFamily: 'Georgia, serif', fontSize: 18, fontStyle: 'italic', color: '#1A1A1A', marginBottom: 8 }}>
+              "The system tells me what to do every morning. I stopped guessing."
+            </p>
+            <div style={{ fontSize: 12, color: '#6B6560', fontFamily: 'var(--font-body)' }}>Owner, aesthetics business — Greenville, SC</div>
+          </div>
+        </div>
+      </section>
+
       {/* Other engines */}
       <section style={{ background: '#F7F4F0', borderTop: '1px solid #E8E0D5' }}>
         <div className="container">
