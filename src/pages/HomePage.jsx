@@ -6,9 +6,12 @@ export default function HomePage() {
     <div>
 
       {/* ── HERO ── */}
-      <section style={{ padding: '100px 0 80px', background: '#fff', borderBottom: '1px solid #E8E0D5' }}>
+      <section style={{ padding: '80px 0 80px', background: '#fff', borderBottom: '1px solid #E8E0D5' }}>
         <div className="container">
           <div style={{ maxWidth: 760 }}>
+            <div style={{ marginBottom: 32 }}>
+              <img src="/orbita_logo.png" alt="Orbita" style={{ height: 64, objectFit: 'contain' }} />
+            </div>
             <div style={{ display: 'inline-flex', alignItems: 'center', gap: 8, background: '#F7F4F0', border: '1px solid #E8E0D5', borderRadius: 20, padding: '6px 14px', marginBottom: 28 }}>
               <div style={{ width: 6, height: 6, borderRadius: '50%', background: '#2A7A5A' }} />
               <span style={{ fontSize: 12, fontWeight: 700, color: '#2A7A5A' }}>Orbita Care is live</span>

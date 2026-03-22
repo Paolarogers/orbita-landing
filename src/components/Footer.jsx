@@ -9,7 +9,7 @@ export default function Footer() {
 
           {/* Brand */}
           <div>
-            <div style={{ fontFamily: 'Georgia, serif', fontSize: 24, fontWeight: 400, marginBottom: 12, letterSpacing: '-0.02em' }}>Orbita</div>
+            <img src="/orbita_logo.png" alt="Orbita" style={{ height: 48, objectFit: 'contain', marginBottom: 12, filter: 'brightness(0) invert(1) opacity(0.85)' }} />
             <div style={{ fontSize: 13, color: '#6B6560', lineHeight: 1.7, maxWidth: 280 }}>
               A modular operating system for service businesses. Built and managed by HC Business & Media in Greenville, SC.
             </div>

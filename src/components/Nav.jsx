@@ -16,11 +16,9 @@ export default function Nav() {
       <div className="container" style={{ display: 'flex', alignItems: 'center', justifyContent: 'space-between', height: 64 }}>
 
         {/* Logo */}
-        <Link to="/" style={{ display: 'flex', alignItems: 'center', gap: 8 }}>
-          <div style={{ fontFamily: 'Georgia, serif', fontSize: 20, fontWeight: 400, letterSpacing: '-0.02em', color: '#1A1A1A' }}>
-            Orbita
-          </div>
-          <div style={{ fontSize: 9, fontWeight: 700, color: '#B0A898', letterSpacing: '0.1em', marginTop: 2 }}>
+        <Link to="/" style={{ display: 'flex', alignItems: 'center', gap: 10 }}>
+          <img src="/orbita_logo.png" alt="Orbita" style={{ height: 36, objectFit: 'contain' }} />
+          <div style={{ fontSize: 9, fontWeight: 700, color: '#B0A898', letterSpacing: '0.1em' }}>
             by HC Business & Media
           </div>
         </Link>
